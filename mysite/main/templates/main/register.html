@@ -1,9 +1,12 @@
+<!--Code of sign up page-->
+
+
 {% extends 'main/header.html' %}
 
 {% block content %}
 <br>
 <div class="container">
-    <form method="POST">
+<form method="POST">
     {% csrf_token %}
     {{form.as_p}}
 
@@ -14,6 +17,14 @@
 </div>
 
 
-{% endblock %}
+                                            <!--Mahima's Code-->
 
+<!-- <div class="differ">
+    <h6>enter the student/company</h6>
+    <input type="text">
+    <button type="submit" aria-placeholder="enter the student/company"">save</button>
+</div> -->
+
+
+{% endblock %}
 

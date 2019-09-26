@@ -1,9 +1,16 @@
+<!--Code to create a navbar-->
+
 <li><a href="/">Home</a></li>
 <!-- <li><a href="https://internshala.com/">INTERNSHALA</a></li> -->
 {% if user.is_authenticated %}
      <li><a href="/account">{{user.username|title}}</a></li>
      <li><a href="/logout">Logout</a></li>
+     <!-- <li><a href="/add_profile">Add profile</a></li> -->
+
 {% else %}
     <li><a href="/login">Login</a></li>
-    <li><a href="/register">Register</a></li>
+    <li><a href="/register_as_employer">Register as Employer</a></li>
+    <li><a href="/register_as_student">Register as Student</a></li>
 {% endif %}
+
+
